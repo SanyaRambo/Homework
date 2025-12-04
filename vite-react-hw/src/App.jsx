@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
 	const [count, setCount] = useState(0);
+	const [year, setYear] = useState(null);
+	useEffect(() => {
+		const currentYear = new Date().getFullYear();
+		setYear(currentYear)
+	}, [])
 
 	return (
 		<>
@@ -33,7 +38,9 @@ function App() {
 			<p className="read-the-docs">
 				Click on the Vite and React logos to learn more
 			</p>
-			<span> Время </span>
+			<span className="read-the-docs"> Время по МСК: </span>
+			<br />
+			<span  className="read-the-docs">{year}</span>
 		</>
 	);
 }
