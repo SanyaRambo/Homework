@@ -1,18 +1,13 @@
-import { useEffect, useState } from "react";
+// Декларативный
+import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-
+// Императивный
 function App() {
 	const [count, setCount] = useState(0);
-	const [year, setYear] = useState(null);
-
-	// В useEffect есть следы императивного подхода. В целом код декларативный.
-	useEffect(() => {
-		const currentYear = new Date().getFullYear();
-		setYear(currentYear)
-	}, [])
-
+	const year = new Date().getFullYear()
+// Декларативный
 	return (
 		<>
 			<div>
@@ -40,9 +35,9 @@ function App() {
 			<p className="read-the-docs">
 				Click on the Vite and React logos to learn more
 			</p>
-			<span className="read-the-docs"> Время по МСК: </span>
+			<span className="read-the-docs"> Время </span>
 			<br />
-			<span  className="read-the-docs">{year}</span>
+			<span  className="read-the-docs"> {year} </span>
 		</>
 	);
 }
