@@ -6,6 +6,8 @@ import "./App.css";
 function App() {
 	const [count, setCount] = useState(0);
 	const [year, setYear] = useState(null);
+
+	// В useEffect есть следы императивного подхода. В целом код декларативный.
 	useEffect(() => {
 		const currentYear = new Date().getFullYear();
 		setYear(currentYear)
