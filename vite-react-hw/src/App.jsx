@@ -1,13 +1,13 @@
-// Декларативный
+// Декларативный код
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-// Императивный
+// Императивный код
 function App() {
 	const [count, setCount] = useState(0);
 	const year = new Date().getFullYear()
-// Декларативный
+// Декларативный код
 	return (
 		<>
 			<div>
