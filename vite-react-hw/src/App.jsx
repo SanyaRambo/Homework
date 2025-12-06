@@ -3,6 +3,7 @@ import { useState, createElement, Fragment} from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import { MyComponent } from "./NewComponent";
 // Императивный код
 function App() {
 	const [count, setCount] = useState(0);
@@ -69,8 +70,11 @@ function App() {
 			'span',
 			{ className: "read-the-docs"},
 			`${year}`
-		)
-		)
+		),
+		<>
+		<MyComponent />
+		</>
+		),
 	);
 }
 
