@@ -10,7 +10,7 @@ export const MyComponent = (props) => {
 
 	return (
 		<>
-			<div className="read-the-docs">{String(date)}</div>
+			<div className="read-the-docs" >{String(date)}</div>
 		</>
 	)
 };
