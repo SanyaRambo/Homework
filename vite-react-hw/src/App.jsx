@@ -45,7 +45,7 @@ function App() {
 			<br />
 			<span className="read-the-docs">{year}</span>
 
-			<MyComponent type="normal" value="123" />
+			<MyComponent/>
 		</Fragment>
 	);
 }
