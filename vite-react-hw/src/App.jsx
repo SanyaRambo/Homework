@@ -10,7 +10,7 @@ function App() {
 	const year = new Date().getFullYear();
 	// Декларативный код
 	return (
-		<Fragment>
+		<Fragment >
 			<div>
 				<a href="https://vite.dev" target="_blank">
 					<img src={viteLogo} className="logo" alt="Vite logo" />
