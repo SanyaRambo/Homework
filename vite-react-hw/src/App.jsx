@@ -2,7 +2,7 @@
 import { useState, Fragment } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import "./App.css";
+import styles from "./App.module.css";
 import { MyComponent } from "./NewComponent";
 // Императивный код
 function App() {
@@ -10,15 +10,15 @@ function App() {
 	const year = new Date().getFullYear();
 	// Декларативный код
 	return (
-		<Fragment >
+		<Fragment>
 			<div>
 				<a href="https://vite.dev" target="_blank">
-					<img src={viteLogo} className="logo" alt="Vite logo" />
+					<img src={viteLogo} className={styles.logoVite} alt="Vite logo" />
 				</a>
 				<a href="https://react.dev" target="_blank">
 					<img
 						src={reactLogo}
-						className="logo react"
+						className={styles.logoReact}
 						alt="React logo"
 					/>
 				</a>
@@ -26,7 +26,7 @@ function App() {
 
 			<h1>Vite + React</h1>
 
-			<div className="card">
+			<div className={styles.card}>
 				<button onClick={() => setCount((count) => count + 1)}>
 					Нажми на счётчик {count}
 				</button>
@@ -36,14 +36,14 @@ function App() {
 			</div>
 
 			<p>
-				<span className="read-the-docs">
+				<span className={styles.readTheDocs}>
 					Кликни на Vite или React, чтобы узнать больше
 				</span>
 			</p>
 
-			<span className="read-the-docs">Время</span>
+			<span className={styles.readTheDocs}>Время</span>
 			<br />
-			<span className="read-the-docs">{year}</span>
+			<span className={styles.readTheDocs}>{year}</span>
 
 			<MyComponent/>
 		</Fragment>

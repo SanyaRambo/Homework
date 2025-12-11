@@ -5,16 +5,23 @@
 	text-align: center;
 }
 
-.logo {
+.logoVite {
 	height: 6em;
 	padding: 1.5em;
 	will-change: filter;
 	transition: filter 300ms;
 }
-.logo:hover {
+
+.logoVite:hover {
 	filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.react:hover {
+.logoReact {
+	height: 6em;
+	padding: 1.5em;
+	will-change: filter;
+	transition: filter 300ms;
+}
+.logoReact:hover {
 	filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
@@ -37,6 +44,6 @@
 	padding: 2em;
 }
 
-.read-the-docs {
+.readTheDocs {
 	color: #888;
 }
