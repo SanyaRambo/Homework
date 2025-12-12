@@ -24,6 +24,12 @@ export const MyComponent = (props) => {
 
 	const currentTime = getTimeFromDate(currentDate)
 
+	const [showGreenText, setShowGreenText] = useState(false);
+	const threeClick = () => {
+		setShowGreenText(!showGreenText)
+	};
+	const text = <div className={ showGreenText ? styles.green : styles.white }>Меняю цвет текста кнопки и текста выше</div>;
+
 	return (
 		<>
 			<div>value = { value }</div>
@@ -31,6 +37,11 @@ export const MyComponent = (props) => {
 			<div className="read-the-docs" >{currentTime}</div>
 			{showText && <div> Текст </div>}
 			<button onClick={twoOnClick}>{showText ? 'Скрыть' : 'Показать'} текст</button>
+			<br />
+			<br />
+			<br />
+			{text}
+			<button onClick={threeClick}>{text}</button>
 		</>
 	)
 };
