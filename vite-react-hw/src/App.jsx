@@ -18,7 +18,7 @@ function App() {
 				<a href="https://react.dev" target="_blank">
 					<img
 						src={reactLogo}
-						className={styles.logo.react}
+						className={`${styles.logo} ${styles.react}`}
 						alt="React logo"
 					/>
 				</a>

@@ -1,4 +1,5 @@
 import { useState } from "react"
+import styles from "./NewComponent.module.css"
 
 const getTimeFromDate = (date) => String(date).substring(15,24);
 
